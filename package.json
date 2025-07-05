@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "plasmic:sync": "plasmic sync",
+    "build": "npm run plasmic:sync && next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -24,8 +25,4 @@
     "eslint-config-next": "14.2.30",
     "typescript": "^5"
   }
-}
-"scripts": {
-  "plasmic:sync": "plasmic sync",
-  "build": "npm run plasmic:sync && next build"
 }
