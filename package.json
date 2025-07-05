@@ -11,10 +11,8 @@
     "pages:build": "npx @cloudflare/next-on-pages",
     "preview": "npm run pages:build && npx wrangler pages dev .vercel/output/static",
     "deploy": "npm run pages:build && npx wrangler pages deploy .vercel/output/static"
-
   },
   "dependencies": {
-    "@plasmicapp/cli": "^0.1.340",
     "@plasmicapp/react-web": "^0.2.393",
     "@plasmicpkgs/react-aria": "^0.0.146",
     "next": "14.2.30",
@@ -22,6 +20,7 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@plasmicapp/cli": "^0.1.340",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -30,7 +29,6 @@
     "typescript": "^5"
   },
   "engines": {
-  "node": ">=20"
-}
-  
+    "node": ">=20"
+  }
 }

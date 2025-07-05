@@ -237,7 +237,7 @@
   text-decoration-line: none;
   text-overflow: clip;
 }
-.button:global(.__wab_instance):global(.__wab_instance) {
+.button__u8Nqv:global(.__wab_instance):global(.__wab_instance) {
   max-width: 100%;
   position: relative;
   align-self: flex-start;
@@ -293,6 +293,20 @@
   .section > * {
     grid-column: 4;
   }
+}
+.button__lAbr8:global(.__wab_instance):global(.__wab_instance) {
+  max-width: 100%;
+}
+.svg__yLLr {
+  position: relative;
+  height: 1em;
+}
+.text___9LwRc {
+  white-space: pre;
+}
+.svg___6E4JT {
+  position: relative;
+  height: 1em;
 }
 .h1 {
   position: relative;

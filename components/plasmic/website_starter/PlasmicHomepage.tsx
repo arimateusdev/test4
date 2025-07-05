@@ -85,7 +85,6 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   img?: Flex__<typeof PlasmicImg__>;
-  button?: Flex__<typeof Button>;
   section?: Flex__<"section">;
   h1?: Flex__<"h1">;
 };
@@ -260,9 +259,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   {"Log in"}
                 </PlasmicLink__>
                 <Button
-                  data-plasmic-name={"button"}
-                  data-plasmic-override={overrides.button}
-                  className={classNames("__wab_instance", sty.button)}
+                  className={classNames("__wab_instance", sty.button__u8Nqv)}
                   color={"black"}
                   end={
                     <ChevronDown2Icon
@@ -296,6 +293,21 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-override={overrides.section}
             className={classNames(projectcss.all, sty.section)}
           >
+            <Button
+              className={classNames("__wab_instance", sty.button__lAbr8)}
+              label={
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___9LwRc
+                  )}
+                >
+                  {"Adiconar NF"}
+                </div>
+              }
+            />
+
             <h1
               data-plasmic-name={"h1"}
               data-plasmic-override={overrides.h1}
@@ -306,7 +318,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 sty.h1
               )}
             >
-              {"Welcome to your first page."}
+              {"Atualizou mesmo?"}
             </h1>
             <div
               className={classNames(
@@ -342,9 +354,8 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img", "button", "section", "h1"],
+  root: ["root", "img", "section", "h1"],
   img: ["img"],
-  button: ["button"],
   section: ["section", "h1"],
   h1: ["h1"]
 } as const;
@@ -354,7 +365,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   img: typeof PlasmicImg__;
-  button: typeof Button;
   section: "section";
   h1: "h1";
 };
@@ -420,7 +430,6 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     img: makeNodeComponent("img"),
-    button: makeNodeComponent("button"),
     section: makeNodeComponent("section"),
     h1: makeNodeComponent("h1"),
 
