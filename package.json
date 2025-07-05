@@ -25,3 +25,7 @@
     "typescript": "^5"
   }
 }
+"scripts": {
+  "plasmic:sync": "plasmic sync",
+  "build": "npm run plasmic:sync && next build"
+}
