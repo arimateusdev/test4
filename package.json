@@ -7,7 +7,11 @@
     "plasmic:sync": "plasmic sync",
     "build": "npm run plasmic:sync && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "preview": "npm run pages:build && npx wrangler pages dev .vercel/output/static",
+    "deploy": "npm run pages:build && npx wrangler pages deploy .vercel/output/static"
+
   },
   "dependencies": {
     "@plasmicapp/cli": "^0.1.340",
@@ -24,5 +28,9 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.30",
     "typescript": "^5"
-  }
+  },
+  "engines": {
+  "node": ">=20"
+}
+  
 }
